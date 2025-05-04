@@ -1,0 +1,10 @@
+groups:
+- name: app_alerts
+  rules:
+  - alert: HighRequestCount
+    expr: app_requests_total > 100
+    for: 5m
+    labels:
+      severity: warning
+    annotations:
+      summary: "High request count on {{ $labels.instance }}"

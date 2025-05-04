@@ -1,0 +1,9 @@
+FROM prom/prometheus:v2.40.5
+
+COPY ./prometheus.yml /etc/prometheus/prometheus.yml
+COPY ./alert.rules /etc/prometheus/alert.rules
+
+USER nobody
+EXPOSE 9090
+
+VOLUME ["/prometheus"]
