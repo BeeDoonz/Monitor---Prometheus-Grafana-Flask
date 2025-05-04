@@ -1,4 +1,4 @@
-# Documentação do Projeto Monitoring-demo
+# Documentação do Projeto Monitor - Prometheus, Grafana & Flask
 
 ## Visão Geral
 Projeto de monitoramento com:
